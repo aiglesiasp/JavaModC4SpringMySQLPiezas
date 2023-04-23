@@ -33,7 +33,7 @@ public class Pieza {
 	private String nombre;
 
 	@OneToMany
-	@JoinColumn(name = "suministra")
+	@JoinColumn(name = "id")
 	private List<Suministra> suministra;
 
 	// CONSTRUCTORES
