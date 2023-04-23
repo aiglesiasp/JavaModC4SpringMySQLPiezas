@@ -11,6 +11,6 @@ import com.aiglesiasp.javamodc4.springmysql.piezas.dto.Proveedor;
  * @author aitor
  *
  */
-public interface IProveedorDAO extends JpaRepository<Proveedor, String> {
+public interface IProveedorDAO extends JpaRepository<Proveedor, Integer> {
 
 }

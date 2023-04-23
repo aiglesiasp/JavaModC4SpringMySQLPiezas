@@ -17,9 +17,9 @@ public interface IProveedorService {
 
 	public Proveedor guardarProveedor(Proveedor proveedor); // Guarda un proveedor CREATE
 
-	public Proveedor proveedorById(String id); // Leer datos de un proveedor READ
+	public Proveedor proveedorById(int id); // Leer datos de un proveedor READ
 
 	public Proveedor actualizarProveedor(Proveedor proveedor); // Actualiza datos del proveedor UPDATE
 
-	public void eliminarProveedor(String id);// Elimina el proveedor DELETE
+	public void eliminarProveedor(int id);// Elimina el proveedor DELETE
 }

@@ -27,12 +27,12 @@ public class Proveedor {
 	// Atributos de entidad departamento
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
+	private int id;
 	@Column(name = "nombre")
 	private String nombre;
 
 	@OneToMany
-	@JoinColumn(name = "id")
+	@JoinColumn(name = "suministra")
 	private List<Suministra> suministra;
 
 	// CONSTRUCTORES
@@ -45,11 +45,11 @@ public class Proveedor {
 	}
 
 	// GETTERS Y SETTERS
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
